@@ -19,18 +19,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            UnaRoomTheme {
-
-                LoginScreen(
-                    onLoginClick = {
-                        // Aquí podrías poner un mensaje o lógica de navegación después
-                        println("Botón de login pulsado")
-                    }
-                )
-            }
-        }
+            UnaRoomApp()
         }
     }
+}
 
 
 @Composable
